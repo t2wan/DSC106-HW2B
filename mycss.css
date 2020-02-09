@@ -1,0 +1,117 @@
+.main{font-family:'Montserrat', sans-serif;}
+h1,h2,h3{font-family: 'Montserrat', sans-serif;}
+#symbol{height: 70px;width: 10%;}
+.upperimages{display: inline-block; width: 33%;}
+.middleimages{display: inline-block; width: 33%;}
+.sub > div {
+    display: inline-block;
+    display: -moz-inline-box;
+    *display: inline; 
+    zoom: 1;
+    width: 33%;
+    text-align: center;
+}
+
+#st1{color: blue;font-size: 20px;}
+#st2{color: blue;font-size: 20px;}
+#st3{color: green;font-size: 20px;}
+#st4{color: blue;font-size: 20px;}
+
+
+#img1{height: 300px;width: 400px;}
+#img2{height: 300px;width: 350px;}
+iframe{border: none;
+    padding-right: 20px;
+     padding-left: 150px; 
+     width: 500px; 
+     height: 350px;
+     position: relative;
+     right: 250px;
+   }
+
+#source{position: relative;left:1150px}
+#im1{position: relative;left:30px}
+#im2{position: relative;left:30px}
+#t1{position: relative;left:90px;font-size: 18px;}
+#t2{position: relative;left:150px;font-size: 18px;}
+
+
+
+table{text-align: center;width: 80%;margin-left: 10%;margin-right:10%;}
+table, th, td {
+    border: 1px solid black;
+  }
+.lightgrey{background-color: lightgrey;}
+
+.button-success,
+        .button-error,
+        .button-warning,
+        .button-secondary {
+            color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-success {
+            background: rgb(28, 184, 65); /* this is a green */
+        }
+
+        .button-error {
+            background: rgb(202, 60, 60); /* this is a maroon */
+        }
+
+        .button-warning {
+            background: rgb(223, 117, 20); /* this is an orange */
+        }
+
+        .button-secondary {
+            background: rgb(66, 184, 221); /* this is a light blue */
+        }
+
+figure{
+    width: 40%;
+    display: inline-block;
+}
+
+#ppp {
+  border-radius: 50%;
+  background: blue; 
+  transform: rotate(-90deg);
+}
+
+ 
+circle {
+  fill: none;
+  stroke-width: 32;
+}
+ 
+circle#firstcircle {
+  stroke:red;
+}
+
+#firstfraction{
+    transform: rotate(90deg);
+    font-size:2.5px;
+}
+
+#secondfraction{
+    transform: rotate(90deg);
+    font-size:2.5px;
+
+}
+
+figcaption{
+    text-align: center;
+}
+
+rect.DingusColor{
+    fill: red;
+}
+
+rect.WidgetColor{
+    fill:blue;
+}
+
+line{
+    stroke: black;
+}

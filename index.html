@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Global Dashboard></title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7CPaytone+One&display=swap" rel="stylesheet" />
+    <script src="hw2.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <link href='mycss.css' rel="stylesheet" type='text/css'>
+</head>
+
+<body onload="readEntries()">
+    <main>
+        <img src='dw-logo.png' id='symbol' class='upperimages' alt='lol'>
+        <h1 class='upperimages'>Global Dashboard</h1>
+        <div class = "all">
+            <div class="sub">
+                <div>Dingus</div>
+                <div>Widget</div>
+                <div>Sales</div>
+            </div>
+        </div>
+        <br/>
+        <div class = "all">
+            <div class = "sub">
+                <div id='st1'>0</div>
+                <div id='st2'>0</div>
+                <div id='st3'>$
+                    <samp id='st4' class = "all">0.00</samp>
+                </div>
+                
+            </div>
+        </div> 
+    <hr/>
+
+    <figure>
+
+        <figcaption>Sales Ratio for Dingus and Widget Daily</figcaption>
+    
+        <svg viewBox="0 0 900 900">
+            <g>
+                <line x1="90" x2="90" y1="0" y2="851"></line>
+              </g>
+              <g>
+                <line x1="90" x2="895" y1="850" y2="850"></line>
+              </g>
+                <g>
+                <text x="90" y="880">01/01/2020</text>
+                <text x="180" y="880">01/02/2020</text>
+                <text x="270" y="880" id='date0'></text>
+                <text x="360" y="880" id='date1'></text>
+                <text x="450" y="880" id='date2'></text>
+                <text x="540" y="880" id='date3'></text>
+                <text x="630" y="880" id='date4'></text>
+                <text x="720" y="880" id='date5'></text>
+                <text x="810" y="880" id='date6'></text>
+                <text x="850" y="895">Date</text>
+
+              </g>
+              <g>
+                <text x="40" y="40">100%</text>
+                <text x="40" y="121">90%</text>
+                <text x="40" y="202">80%</text>
+                <text x="40" y="283">70%</text>
+                <text x="40" y="364">60%</text>
+                <text x="40" y="445">50%</text>
+                <text x="40" y="526">40%</text>
+                <text x="40" y="607">30%</text>
+                <text x="40" y="688">20%</text>
+                <text x="40" y="769">10%</text>
+                <text x="40" y="850">0%</text>
+                <text x="0" y="480">Fraction</text>
+              </g>
+              <g>
+                <rect width="40" height="810" class='DingusColor' x="110" y="40"></rect>
+                <rect width="40" height="405" class='WidgetColor' x="110" y="40"></rect>
+                <text x="115" y="830" fill='white'>50%</text>
+                <text x="115" y="70" fill='white'>50%</text>
+              </g>
+
+              <g>
+                <rect width="40" height="810" class='DingusColor' x="200" y="40"></rect>
+                
+                <rect width="40" height="405" class='WidgetColor' x="200" y="40"></rect>
+                <text x="205" y="830" fill='white'>50%</text>
+                <text x="205" y="70" fill='white'>50%</text>
+              </g>
+
+              <g>
+                <rect width="40" height="0" class='DingusColor' x="290" y="40" id='red0'></rect>
+                
+                <rect width="40" height="0" class='WidgetColor' x="290" y="40" id='blue0'></rect>
+                <text x="295" y="830" fill='white' id='redpercent0'>50%</text>
+                <text x="295" y="70" fill='white' id='bluepercent0'>50%</text>
+              </g>
+
+              <g>
+                <rect width="40" height="0" class='DingusColor' x="380" y="40" id='red1'></rect>
+                
+                <rect width="40" height="0" class='WidgetColor' x="380" y="40" id='blue1'></rect>
+                <text x="385" y="830" fill='white' id='redpercent1'>50%</text>
+                <text x="385" y="70" fill='white' id='bluepercent1'>50%</text>
+              </g>
+
+              <g>
+                <rect width="40" height="0" class='DingusColor' x="470" y="40" id='red2'></rect>
+                
+                <rect width="40" height="0" class='WidgetColor' x="470" y="40" id='blue2'></rect>
+                <text x="475" y="830" fill='white' id='redpercent2'>50%</text>
+                <text x="475" y="70" fill='white' id='bluepercent2'>50%</text>
+              </g>
+
+              <g>
+                <rect width="40" height="0" class='DingusColor' x="560" y="40" id='red3'></rect>
+                <rect width="40" height="0" class='WidgetColor' x="560" y="40" id='blue3'></rect>
+                <text x="565" y="830" fill='white' id='redpercent3'>50%</text>
+                <text x="565" y="70" fill='white' id='bluepercent3'>50%</text>
+
+              </g>
+              <g>
+                <rect width="40" height="0" class='DingusColor' x="650" y="40" id='red4'></rect>
+                <rect width="40" height="0" class='WidgetColor' x="650" y="40" id='blue4'></rect>
+                <text x="655" y="830" fill='white' id='redpercent4'>50%</text>
+                <text x="655" y="70" fill='white' id='bluepercent4'>50%</text>
+              </g>
+              <g>
+                <rect width="40" height="0" class='DingusColor' x="740" y="40" id='red5'></rect>
+                <rect width="40" height="0" class='WidgetColor' x="740" y="40" id='blue5'></rect>
+                <text x="745" y="830" fill='white' id='redpercent5'>50%</text>
+                <text x="745" y="70" fill='white' id='bluepercent5'>50%</text>
+              </g>
+              <g>
+                <rect width="40" height="0" class='DingusColor' x="830" y="40" id='red6'></rect>
+                <rect width="40" height="0" class='WidgetColor' x="830" y="40" id='blue6'></rect>
+                <text x="835" y="830" fill='white' id='redpercent6'>50%</text>
+                <text x="835" y="70" fill='white' id='bluepercent6'>50%</text>
+              </g>
+              
+          </svg>
+
+    
+            <svg>
+                <g>
+                    <rect width="40" height="19" class='DingusColor' ></rect>
+                    <text x="45" y="9.5" dy=".35em">Dingus</text>
+                  </g>
+                  <g>
+                    <rect width="40" height="19" y="20" class='WidgetColor'></rect>
+                    <text x="45" y="28" dy=".35em">Widget</text>
+                  </g>
+              </svg>
+    
+        </figure>
+
+
+
+
+<figure>
+
+    <figcaption>Sales Ratio for Dingus and Widget Overall</figcaption>
+
+    <svg viewBox="0 0 32 32" id = 'ppp'>
+        <circle id='firstcircle' stroke-dasharray="50 100" r=16 cx=16 cy=16></circle>
+        <circle id = 'secondcircle' stroke-dasharray="50 100" r=16 cx=16 cy=16></circle>
+        <text id = 'firstfraction'   x="5" y="-18" fill="#fff">50%</text>
+        <text id = 'secondfraction' x="22" y="-18" fill="#fff">50%</text>
+      </svg>
+
+        <svg>
+            <g>
+                <rect width="40" height="19" class='DingusColor' ></rect>
+                <text x="45" y="9.5" dy=".35em">Dingus</text>
+              </g>
+              <g>
+                <rect width="40" height="19" y="20" class='WidgetColor'></rect>
+                <text x="45" y="28" dy=".35em">Widget</text>
+              </g>
+          </svg>
+
+    </figure>
+
+
+
+
+      
+
+    <hr/>
+
+    <table id='mytable'>
+        <caption>Order History</caption>
+        <col class= 'lightgrey'>
+        <col span="4">
+        <thead>
+            <tr>
+                <th rowspan="2"> ID#</th>
+                <th rowspan="2">Date</th>
+                <th colspan="2">Quantity</th>
+                <th rowspan="2">Total</th>
+            </tr>
+            <tr>
+                <th>Dingus</th>
+                <th>Widget</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+            <td colspan = '5'>©2020 D&W Worldwide.</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <section>
+        <details>
+            <summary>Order Form</summary>
+            <hr/>
+            <form class='pure-form'>
+
+                <label for="Dingus">Dingus</label>
+                 <input type="text" id="Dingus" value="0" onchange="lala()">
+                @ <input type='text' value = '14.25' disabled>
+                = $ <input type='text' value =0.00 disabled id='DingusTotal'>
+                <br>
+
+                <label for="Widget">Widget</label>
+                 <input type="text" id="Widget" value="0" onchange = 'lalala()'>
+                @ <input type='text' value = '9.99' disabled>
+                = $ <input type='text' value =0.00 disabled id = 'WidgetTotal'>
+                <br>
+
+
+                <label for="Total">Total $</label>  
+                <input type='text' id='Total' value = 0.00 disabled>
+                <br>
+
+                <button class="button-error pure-button" onclick="clearr()" type = button>Cancel</button>
+
+                <button class="button-success pure-button" onclick="update()" disabled id='Order' type = button>Order</button>
+
+            </form>
+    
+        </details>
+        </section>
+
+    </main>
+</body>
+</html>
